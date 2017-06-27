@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>001-AngularJS简介</title>
+</head>
+<body>
+	<script>
+		var A = function(){
+			this.say = 'hello angularJS';
+			this.getName = function(){
+				return '张三';
+			}
+		}
+
+		var B = function(aObj){
+			// B依赖于a
+			// document.write(a.say);
+			document.write(aObj.getName());
+		}
+		var a = new A();
+		// a注入b
+		var b = new B(a);
+		// js里2个方法
+		// 1.将a传到b中去
+		// 2.a是全局变量
+	</script>
+	
+
+</body>
+</html>
