@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>013-$provide服务</title>
+</head>
+<body>
+	<div ng-app='myapp'>
+		<div ng-controller='myController'>
+		<!-- number filter -->
+			{{1234567|number}}<br/>
+			<!-- number filter count:3 -->
+			{{212343.434343|number:3}}<br/>
+			<!-- currency filter -->
+			{{423432423|currency}}<br/>
+			<!-- currency filter:'xxx' -->
+			{{32423432|currency:'rmb'}}<br/>
+			<!-- date filter -->
+			{{today|date:'medium'}}<br/>
+			{{today|date:'short'}}<br/>
+			{{today|date:'fullDate'}}<br/>
+			{{today|date:'longDate'}}<br/>
+			{{today|date:'mediumDate'}}<br/>
+			{{today|date:'shortTime'}}<br/>
+			<!-- date 格式化 -->
+			{{today|date:'y'}}<br/>
+			{{today|date:'yy'}}<br/>
+			{{today|date:'yyyy'}}<br/>
+			{{today|date:'M'}}<br/>
+			{{today|date:'MM'}}<br/>
+			{{today|date:'MMM'}}<br/>
+			{{today|date:'MMMM'}}<br/>
+			{{today|date:'d'}}<br/>
+			day in month:{{today|date:'dd'}}<br/>
+			day in week:{{today|date:'EEEE'}}<br/>
+			{{today|date:'EEE'}}<br/>
+			{{today|date:'HH'}}<br/>
+			{{today|date:'H'}}<br/>
+			{{today|date:'hh'}}<br/>
+			{{today|date:'h'}}<br/>
+			{{today|date:'mm'}}<br/>
+			{{today|date:'m'}}<br/>
+			{{today|date:'s'}}<br/>
+			{{today|date:'ss'}}<br/>
+			{{today|date:'y-MM-d H:m:s'}}
+		</div>
+	</div>
+	<script type='text/javascript' src='../../vendor/angular/angular.js'></script>
+	<script type='text/javascript' src='index.js'></script>
+</body>
+</html>
